@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="BNKP Tangerang Selatan" name="keywords"/>
+    <meta content="" name="description"/>
+    <link href="LOGO Kab tang.png" rel="icon"/>
+    <title>BNKP Tangerang Selatan | CAMPPRAJECT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+    <div class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-white text-teal-800 shadow-md">
+        <div class="flex items-center space-x-4">
+            <img alt="Logo 1" class="h-12" src="images.png"/>
+        </div>
+        <div class="flex space-x-8 text-lg">
+            <a class="hover:underline" href="#beranda">Beranda</a>
+            <a class="hover:underline" href="#tentang" onclick="showTentang()">Tentang</a>
+            <a class="hover:underline" href="#struktur">Struktur</a>
+            <a class="hover:underline" href="#kegiatan">Kegiatan</a>
+            <a class="hover:underline" href="#kontak">Kontak</a>
+        </div>
+    </div>
+    <div class="pt-20"></div>
+    <!-- Beranda -->
+    <div class="slider" id="beranda">
+        <div class="slides">
+            <div class="slide">
+                <img alt="Panitia Gereja" height="1920" src="g1.jpeg" width="1920"/>
+                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4">
+                    <h3 class="text-2xl">BNKP Tangerang Selatan</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img alt="Koor" height="1920" src="g2.jpeg" width="1920"/>
+                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4">
+                    <h3 class="text-2xl">BNKP Tangerang Selatan</h3>
+                </div>
+            </div>
+            <div class="slide">
+                <img alt="Ibadah Jemaat" height="1920" src="g4.jpeg" width="1920"/>
+                <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4">
+                    <h3 class="text-2xl">BNKP Tangerang Selatan</h3>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </div>
+    <!-- Tentang -->
+    <div class="container mx-auto px-4 py-8" id="tentang">
+        <h1 class="text-3xl font-bold text-center">Gereja BNKP Tangerang Selatan</h1>
+        <p class="mt-4 text-lg text-center">
+        Awal Kehadiran masyarakat Nias di Tangerang Selatan dimulai pada tahun 1970-an. Seiring dengan migrasi ini, kebutuhan akan tempat ibadah bagi orang-orang Nias yang beragama Kristen semakin meningkat. Pembentukan Pos Pelayanan Pada tahun 1991, di tengah komunitas Nias yang berkembang, dibentuklah Pos Pelayanan BNKP. Pos ini menjadi tempat berkumpul dan beribadah bagi jemaat Nias yang tinggal di Tangerang Selatan. Perkembangan Ibadah di Rumah Dari tahun 1991 hingga 1999, ibadah dilakukan secara informal di rumah-rumah anggota jemaat. 
+        Ini adalah masa awal di mana komunitas mulai terbentuk dan saling mendukung satu sama lain. Pendirian Gereja Ibadah Perdana dilakukan pada tahun 1999, BNKP Tangerang Selatan mengadakan ibadah perdana secara resmi. Meskipun mengalami beberapa tantangan, seperti penolakan dari warga sekitar, jemaat tetap berkomitmen untuk melanjutkan kegiatan ibadah. Tempat Ibadah dari Oktober 1999 hingga November 2001, jemaat menggunakan Ruko Ligamas sebagai tempat ibadah sementara sebelum akhirnya pindah ke lokasi yang lebih permanen. 
+        Pembelian Ruko pada tahun 2002, BNKP Tangerang Selatan mulai mencicil pembayaran untuk sebuah Ruko di Perumahan Shinta Griya. Melalui dukungan jemaat dan persembahan, Ruko tersebut berhasil dibayar lunas pada tahun 2004, menjadi tempat ibadah yang permanen bagi jemaat. Tetapi sekarang gereja BNKP ini berpindah tempat di Pamulang Raya di Ruko Pamulang. Pertumbuhan Jemaat Pendeta dan Pengurus BNKP Tangerang Selatan dipimpin oleh beberapa pendeta yang berkontribusi dalam pengembangan gereja dan pelayanannya. Di antara pendeta yang pernah menjabat adalah Pdt. Margareth Mendrofa dan Pdt. Aroziduhu Bu’ulolo. Kegiatan dan Pelayanan gereja ini aktif dalam berbagai kegiatan ibadah, pendidikan, dan pelayanan sosial, memperkuat ikatan komunitas Nias dan memberikan dukungan kepada anggota jemaat.
+
+        </p>
+        <div class="mt-8">
+            <h2 class="text-lg font-bold mb-4">5 Hari Raya Agama Kristen Protestan</h2>
+            <p class="mb-4">
+                Hari Raya Paskah: Paskah adalah salah satu perayaan terbesar agama Kristen. Hari raya paskah atau bisa dikatakan hari kebangkitan Yesus dari kematian. Pada hari raya ini selalu jatuh pada hari minggu.
+            </p>
+            <p class="mb-4">
+                Hari Raya Pentakosta: Hari raya pentakosta juga bisa dikatakan hari raya pencurahan roh kudus. Hari raya pencurahan roh kudus ini diperingati 50 hari setelah hari Paskah atau 10 hari setelah Yesus naik ke Surga. Pentakosta dalam bahasa Yunani memiliki arti ke-50. Hari raya pentakosta ini selalu jatuh pada hari minggu.
+            </p>
+            <p class="mb-4">
+                Hari Raya Natal: Hari Raya Natal atau Hari kelahiran Yesus kristus. Hari Raya ini dapat dikatakan sebagai hari raya Kristen yang paling meriah. Karena setiap hari raya natal dekorasi lampu, pohon natal, dan santa claus hadir menghiasi gereja dan setiap rumah keluarga yang merayakan. Hingga dekorasi-dekorasi di beberapa area di pusat Kota.
+            </p>
+            <p class="mb-4">
+                Hari Raya Jumat Agung: Hari Jumat Agung bisa dikenal juga sebagai peringatan akan hari kematian Yesus. Jumat Agung diperingati sebagai kematian Yesus di kayu salib dalam menebus dosa manusia.
+            </p>
+            <p class="mb-4">
+                Hari Raya Kenaikan Yesus Ke Surga : Hari raya kenaikan Yesus ke surga diperingati 40 hari setelah hari Kebangkitan Yesus atau Hari Raya Paskah. Selama 40 hari menampakkan diri kepada murid-muridNya, maka Yesus naik ke surga meninggalkan murid-muridNya.
+            </p>
+        </div>
+        <div class="mt-8 text-lg">
+            <p><strong>Alamat:</strong></p>
+            <p>Jl. Pamulang Raya, Pamulang Bar., Kec. Pamulang, Kota Tangerang Selatan, Banten 15417</p>
+        </div>
+        <div class="mt-8 text-lg">
+            <p><strong>Jadwal Ibadah:</strong></p>
+            <p>1. Pukul 07:00 WIB Ibadah Pemuda</p>
+            <p>2. Pukul 10:00 WIB Ibadah Umum</p>
+            <p>3. Pukul 17:00 WIB Ibadah Umum</p>
+        </div>
+    </div>
+    <!-- Struktur -->
+    <section id="struktur" class="py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-8">STRUKTUR ORGANISASI</h3>
+            <div class="flex justify-center">
+                <img src="struktur2.png" class="w-1/2" alt="Gambar struktur organisasi BNKP Tangerang Selatan">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kegiatan -->
+    <div class="container mx-auto py-8" id="kegiatan">
+        <h1 class="text-4xl font-bold text-center mb-8">KEGIATAN</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img alt="Festival Koor Antar Wijk" class="w-full h-48 object-cover" height="400" src="sidi.jpeg" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-purple-600 mb-2">Acara Sidi</h2>
+                    <p class="text-gray-700">
+                    upacara pemberkatan bagi umat Kristen Protestan yang telah dianggap dewasa dan bersedia menerima Yesus dalam hidupnya
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img alt="Acara Pesta Gotilon" class="w-full h-48 object-cover" height="400" src="reret.jpeg" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-purple-600 mb-2">Acara Retret</h2>
+                    <p class="text-gray-700">
+                    kegiatan rohani yang dilakukan oleh suatu agama untuk membina dan meningkatkan iman dalam diri setiap umat
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img alt="Kegiatan Penelaahan Alkitab" class="w-full h-48 object-cover" height="400" src="sekolahminggu.jpeg" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-purple-600 mb-2">Kegiatan Sekolah Minggu</h2>
+                    <p class="text-gray-700">
+                        Kegiatan Ibadah Sekolah Minggu Yang Rutin Dilakukan Setiap Hari Minggu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Kontak Kami -->
+        <div class="bg-blue-100 py-8" id="kontak">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold">Hubungi Kami</h2>
+                    <p class="mt-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Alamat:</strong>
+                    </p>
+                    <p><a href="https://www.google.com/maps/place/BNKP+TANGERANG+SELATAN/@-6.3432078,106.7263715,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69ef41679c169f:0x11daea05dd7ec808!8m2!3d-6.3432078!4d106.7285602!16s%2Fg%2F11b7w1k5k1" target="_blank" class="text-blue-500 underline">BNKP TANGERANG SELATAN</a></p>
+                    <p class="mt-4">
+                        <i class="fas fa-phone"></i>
+                        <strong>Telp:</strong>
+                    </p>
+                    <p>0823-7376-5000</p>
+                    <p class="mt-4">
+                        <i class="fas fa-envelope"></i>
+                        <strong>Instagram:</strong>
+                    </p>
+                    <a class="flex items-center" href="https://www.instagram.com/korempa_bnkptangsel?igsh=azZ2MTM5YnF5NHNp" target="_blank">@korempa_bnkptangsel</a>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Tentang Kami</h2>
+                    <p class="mt-4">
+                        BNKP Tangerang Selatan adalah Gereja BNKP yang berada di Pamulang Barat, Tangerang Selatan, dan bernaung di bawah BNKP Jemaat Tangerang berada di wilayah BNKP Distrik Jakarta.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="bg-gray-100 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold">BNKP Tangerang Selatan</p>
+        </div>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function showTentang() {
+            document.getElementById('tentang').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
